@@ -4,10 +4,10 @@
     <resolvers>
         <chain name="main">
             <filesystem name="local" checkmodified="true" validate="true">
-                <ivy pattern="${ivy.settings.dir}/../repository/[module]-[revision].xml"/>
+                <ivy pattern="${ivy.settings.dir}/../repository/[module]-ivy-[revision].xml"/>
                 <artifact pattern="${ivy.settings.dir}/../repository/[module]-[revision].[ext]"/>
             </filesystem>
-            <ibiblio name="artifactory" m2compatible="true" root="http://repo.jfrog.org/artifactory/repo"/>
+            <ibiblio name="rjo" m2compatible="true" root="http://repo.jfrog.org/artifactory/repo"/>
         </chain>
         <url name="publish_artifactory" m2compatible="true">
             <artifact
